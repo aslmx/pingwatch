@@ -17,46 +17,46 @@
     {
         display: grid;
         grid-template-columns: auto 250px;
-        grid-template-rows: 10% auto;
+        #grid-template-rows: 10% auto;
         #justify-items: stretch;
         height: 98vh;
     }
-    div#legend {
-        display: grid;
+    div#sidebar {
         grid-column-start: 2;
         grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
+    }
+    div#legend {
+       
+    
     }
     div#optionsform {
-        display: grid;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    
+         height: 10vh;
     }
     div#ping {
         display: grid;
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 3;
+        #grid-row-start: 1;
+        #grid-row-end: 3;
+        
     }
     </style>
   </head>
   <body>
   <div class="box">
     <div id="ping"></div>
-    <div id="optionsform">
+    <div id="sidebar">
+    <!--<div id="optionsform"> -->
     <form id="options">
       <label for="autoscroll">Autoscroll</label>
       <input type="checkbox" id="autoscroll" checked>
     </form>
-    </div>
+    <!--</div>-->
     <div id="legend"></div>
     <script defer src="/initial"></script>
     <script id="update"></script>
+    <div>
   </div>
+  
   </body>
 </html>
