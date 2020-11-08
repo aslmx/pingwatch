@@ -13,24 +13,40 @@
     div#legend span.highlight {
         background-color: #dddddd;
     }
+    .box
+    {
+        display: grid;
+        grid-template-columns: auto 250px;
+        grid-template-rows: 10% auto;
+        #justify-items: stretch;
+        height: 98vh;
+    }
     div#legend {
-        width: 20vw;
-        height: 88vh;
-        float: right;
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
     div#optionsform {
-        width: 20vw;
-        height: 10vh;
-        float: right;
+        display: grid;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    
     }
     div#ping {
-        width: 75vw;
-        height: 98vh;
-        float: left;
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
     }
     </style>
   </head>
   <body>
+  <div class="box">
     <div id="ping"></div>
     <div id="optionsform">
     <form id="options">
@@ -41,5 +57,6 @@
     <div id="legend"></div>
     <script defer src="/initial"></script>
     <script id="update"></script>
+  </div>
   </body>
 </html>
